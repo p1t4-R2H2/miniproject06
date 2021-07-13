@@ -53,11 +53,12 @@ var displayResults = function (data, results){
     // resultsContainerEl.textContent=searchTerm;
 
     for(var i=0; i<results.length; i++){
-        var resultName=JSON.stringify(results[i]);
-        var resultEl = document.createElement('span');
+        var resultName=JSON.stringify(results[i].url);
+        var resultEl = document.createElement('div');
         //resultEl.classList = 
         
-        var titleEl = document.createElement('span');
+        var titleEl = document.createElement('a');
+        titleEl.addClass("")
         titleEl.textContent=resultName;
 
         resultEl.appendChild(titleEl);
